@@ -8,6 +8,8 @@ const { CosmosClient } = require('@azure/cosmos');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+app.set('port', PORT);
+
 app.set('views', __dirname + '/views');
 app.engine('.hbs', engine({
     extname: '.hbs',
